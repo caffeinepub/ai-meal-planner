@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Figtree";
+  src: url("/assets/fonts/Figtree.woff2") format("woff2");
+  font-weight: 300 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("/assets/fonts/Fraunces.woff2") format("woff2");
+  font-weight: 300 900;
+  font-display: swap;
+}
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+    /* Pure white background */
+    --background: 1 0 0;
+    --foreground: 0.18 0.03 240;
+    /* Card - white with faint blue tint */
+    --card: 0.99 0.008 220;
+    --card-foreground: 0.18 0.03 240;
+    --popover: 0.99 0.008 220;
+    --popover-foreground: 0.18 0.03 240;
+    /* Primary - ocean blue */
+    --primary: 0.48 0.18 225;
+    --primary-foreground: 1 0 0;
+    /* Secondary - light ocean blue tint */
+    --secondary: 0.93 0.04 220;
+    --secondary-foreground: 0.35 0.12 225;
+    /* Muted - very light blue-gray */
+    --muted: 0.95 0.02 220;
+    --muted-foreground: 0.5 0.04 225;
+    /* Accent - deeper teal-blue */
+    --accent: 0.42 0.15 210;
+    --accent-foreground: 1 0 0;
+    /* Destructive */
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    /* Border */
+    --border: 0.88 0.03 220;
+    --input: 0.88 0.03 220;
+    --ring: 0.48 0.18 225;
+    /* Charts */
+    --chart-1: 0.48 0.18 225;
+    --chart-2: 0.6 0.15 200;
+    --chart-3: 0.38 0.14 240;
+    --chart-4: 0.72 0.12 190;
+    --chart-5: 0.55 0.1 260;
+    /* Sidebar - deep navy ocean blue */
+    --sidebar: 0.22 0.07 235;
+    --sidebar-foreground: 0.95 0.02 210;
+    --sidebar-primary: 0.7 0.14 215;
+    --sidebar-primary-foreground: 0.18 0.06 235;
+    --sidebar-accent: 0.3 0.08 230;
+    --sidebar-accent-foreground: 0.95 0.02 210;
+    --sidebar-border: 0.32 0.07 230;
+    --sidebar-ring: 0.7 0.14 215;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body;
+  }
+}
